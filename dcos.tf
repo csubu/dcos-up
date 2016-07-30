@@ -3,7 +3,7 @@ variable "infra_name" {
 }
 
 variable "region" {
-  default = "eu-west-1"
+  default = "eu-central-1"
 }
 
 variable "availability_zone" {
@@ -31,17 +31,17 @@ variable "ami_ids" {
 
 variable "instance_types" {
   default = {
-    bootstrap    = "m4.2xlarge"
-    master       = "m4.2xlarge"
-    slave        = "m4.2xlarge"
-    slave_public = "m4.2xlarge"
-  }  
+    bootstrap    = "m4.xlarge"
+    master       = "m4.xlarge"
+    slave        = "m4.xlarge"
+    slave_public = "m4.xlarge"
+  }
 }
 
 variable "instance_counts" {
   default = {
     master       = 1
-    slave        = 2
+    slave        = 3
     slave_public = 1
   }
 }
